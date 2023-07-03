@@ -6,171 +6,162 @@ class Service extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        const SizedBox(height: 38),
-        const Text(
-          '  Services',
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.w800,
-            letterSpacing: 0.04,
-            color: Colors.black,
-            fontFamily: 'UberMove',
-          ),
-        ),
-        const SizedBox(height: 32),
-        const Text(
-          '   Go anywhere, Get anything',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w800,
-            letterSpacing: 0.04,
-            color: Colors.black,
-            fontFamily: 'UberMove',
-          ),
-        ),
-        const SizedBox(height: 71),
-        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          const SizedBox(height: 71),
-          Image.asset('Assets/car.png'),
-          Container(
-              width: 98,
-              height: 89,
-              decoration: BoxDecoration(
-                  color: Color(0xffEEEEEE),
-                  borderRadius: BorderRadius.circular(12))),
-          const Text(
-            'Ride',
+      appBar: AppBar(
+        title: const Text('Services'),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(height: 38),
+          Text(
+            ' Services',
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 32,
               fontWeight: FontWeight.w800,
-              letterSpacing: 0.01,
+              letterSpacing: 0.04,
               color: Colors.black,
               fontFamily: 'UberMove',
             ),
           ),
-          Container(
-              width: 126,
-              height: 89,
-              decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 138, 127, 127),
-                  borderRadius: BorderRadius.circular(12))),
-          SizedBox(height: 71),
-          Image.asset('Assets/package.png'),
-          const Text(
-            'Package',
+          SizedBox(height: 32),
+          Text(
+            '   Go anywhere, Get anything',
             style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 0.01,
-                color: Colors.black,
-                fontFamily: 'UberMove'),
-          ),
-        ]),
-        Container(
-            width: 126,
-            height: 89,
-            decoration: BoxDecoration(
-                color: Color.fromARGB(255, 138, 127, 127),
-                borderRadius: BorderRadius.circular(12))),
-        const SizedBox(height: 71),
-        Image.asset('Assets/carwithclock.png'),
-        const Text(
-          'Rentals',
-          style: TextStyle(
-              fontSize: 14,
+              fontSize: 18,
               fontWeight: FontWeight.w800,
-              letterSpacing: 0.01,
+              letterSpacing: 0.04,
               color: Colors.black,
-              fontFamily: 'UberMove.',
-              height: 1),
-        ),
-        const SizedBox(height: 71),
-        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          Container(
-              width: 98,
-              height: 89,
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 138, 127, 127),
-                  borderRadius: BorderRadius.circular(12))),
-          Container(
-              width: 75,
-              height: 64,
-              decoration: BoxDecoration(
-                  color: Color(0xffEEEEEE),
-                  borderRadius: BorderRadius.circular(12))),
-          Image.asset(
-            'Assets/calendar',
-            width: 46,
-            height: 45,
-          ),
-          const Text(
-            "Reserve",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w800,
+              fontFamily: 'UberMove',
             ),
           ),
+          SizedBox(height: 71),
           Container(
-              width: 75,
-              height: 64,
-              decoration: BoxDecoration(
-                  color: Color(0xffEEEEEE),
-                  borderRadius: BorderRadius.circular(12))),
+            width: 98,
+            height: 89,
+            decoration: BoxDecoration(
+              color: const Color(0xffEEEEEE),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'Assets/car.png',
+                  width: 40,
+                  height: 40,
+                ),
+                SizedBox(height: 8),
+                Text(
+                  'Ride',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.01,
+                    color: Colors.black,
+                    fontFamily: 'UberMove',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 71),
           Container(
-              width: 75,
-              height: 64,
-              decoration: BoxDecoration(
-                  color: Color(0xffEEEEEE),
-                  borderRadius: BorderRadius.circular(12))),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [],
-          ),
-          Image.asset(
-            'Assets/package',
-            width: 43,
-            height: 43,
-          ),
-          const Text("Shuttle",
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w800,
-              )),
-        ]),
-        Container(
-            width: 75,
-            height: 64,
+            width: 98,
+            height: 89,
             decoration: BoxDecoration(
-                color: Color(0xffEEEEEE),
-                borderRadius: BorderRadius.circular(12))),
-        Image.asset(
-          'Assets/carwithclock.png',
-          width: 50,
-          height: 50,
-        ),
-        const Text("intercity",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w800,
-            )),
-        Container(
-            width: 75,
-            height: 64,
+              color: const Color(0xffEEEEEE),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'Assets/package.png',
+                  width: 40,
+                  height: 40,
+                ),
+                SizedBox(height: 8),
+                Text(
+                  'Package',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.01,
+                    color: Colors.black,
+                    fontFamily: 'UberMove',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 71),
+          Container(
+            width: 98,
+            height: 89,
             decoration: BoxDecoration(
-                color: Color(0xffEEEEEE),
-                borderRadius: BorderRadius.circular(12))),
-        Image.asset(
-          'Assets/baggage.png',
-          width: 44,
-          height: 39,
-        ),
-        const Text("Travel",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w800,
-            )),
-      ]),
+              color: const Color(0xffEEEEEE),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'Assets/carwithclock.png',
+                  width: 40,
+                  height: 40,
+                ),
+                SizedBox(height: 8),
+                Text(
+                  'Rentals',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.01,
+                    color: Colors.black,
+                    fontFamily: 'UberMove',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'Assets/Frame 34.png',
+              width: 24,
+              height: 24,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'Assets/Frame 35.png',
+              width: 24,
+              height: 24,
+            ),
+            label: 'Services',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'Assets/Frame 36.png',
+              width: 24,
+              height: 24,
+            ),
+            label: 'Activity',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'Assets/Frame 37.png',
+              width: 24,
+              height: 24,
+            ),
+            label: 'Account',
+          ),
+        ],
+      ),
     );
   }
 }
